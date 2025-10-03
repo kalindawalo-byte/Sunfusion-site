@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunfusion Power | Commercial & Industrial Electrical Engineering Solutions Zambia</title>
+    <meta name="description" content="Sunfusion Power delivers premium commercial & industrial electrical engineering solutions in Zambia. Transform your energy infrastructure with our expert engineering team.">
+    <meta name="keywords" content="electrical engineering Zambia, commercial solar solutions, industrial power systems, energy infrastructure Zambia, electrical contractors">
+    <meta name="author" content="Sunfusion Power Limited">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Sunfusion Power | Engineering Solutions for Zambia">
+    <meta property="og:description" content="Premium commercial & industrial electrical engineering solutions in Zambia">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FF9900;
+            --secondary: #003399;
+            --secondary-light: #0033CC;
+            --accent: #FF9900;
+            --light: #ffffff;
+            --dark: #212529;
+            --gray: #6c757d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f5f7fa;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%);
+            color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            color: white;
+            margin: 0;
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        .catchphrase {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            font-size: 0.9rem;
+            color: white;
+            margin-top: 2px;
+            letter-spacing: 1px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 5px 0;
+            position: relative;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent);
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 51, 153, 0.8), rgba(0, 51, 153, 0.9)), url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .cta-button {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        
+        .cta-button:hover {
+            background-color: #e05a00;
+            transform: translateY(-2px);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--secondary);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 3px;
+            background-color: var(--primary);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            min-height: 300px;
+            background: linear-gradient(45deg, var(--secondary) 0%, var(--secondary-light) 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .about-image-content {
+            padding: 20px;
+        }
+        
+        .about-image h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .mission-vision {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .mv-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .mv-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .mv-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: white;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+            position: relative;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        
+        .service-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .service-card:hover .service-img img {
+            transform: scale(1.1);
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+        
+        /* Values Section */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .value-card {
+            text-align: center;
+            padding: 30px 20px;
+            transition: transform 0.3s;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255, 153, 0, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            transition: all 0.3s;
+        }
+        
+        .value-card:hover .value-icon {
+            background-color: rgba(255, 153, 0, 0.2);
+            transform: scale(1.1);
+        }
+        
+        .value-icon i {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+        
+        .value-card h3 {
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, #FF8C00 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            animation: pulse 8s infinite linear;
+        }
+        
+        @keyframes pulse {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .cta-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-section p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .btn-light {
+            background-color: white;
+            color: var(--primary);
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin: 0 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .btn-light:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-call {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin: 0 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .btn-call:hover {
+            background-color: white;
+            color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%);
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        
+        .stat-card {
+            padding: 20px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--accent);
+        }
+        
+        .stat-text {
+            font-size: 1.1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .contact-info {
+            margin-top: 15px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-info i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #495057;
+            color: #adb5bd;
+            font-size: 0.9rem;
+        }
+        
+        /* Contact Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .modal-header h3 {
+            color: var(--secondary);
+            margin: 0;
+        }
+        
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--gray);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background-color: #e05a00;
+        }
+        
+        /* New Company Badge */
+        .new-company-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--primary), #ffcc00);
+            color: var(--secondary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            animation: pulse-glow 2s infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 5px rgba(255, 153, 0, 0.5); }
+            50% { box-shadow: 0 0 20px rgba(255, 153, 0, 0.8); }
+            100% { box-shadow: 0 0 5px rgba(255, 153, 0, 0.5); }
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            nav ul li {
+                margin: 5px 10px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .mission-vision {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .cta-button {
+                margin: 0;
+            }
+            
+            .cta-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .btn-light, .btn-call {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-text">
+                        <h1>Sunfusion <span>Power</span></h1>
+                        <div class="catchphrase">ENGINEERING SOLUTIONS</div>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#values">Values</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="new-company-badge">New for 2024</div>
+            <h1>The Future of Electrical Engineering is Here</h1>
+            <p>Sunfusion Power brings fresh innovation to Zambia's commercial & industrial electrical sector. Experience next-generation solutions designed for today's challenges.</p>
+            <a href="#" class="btn-light" id="hero-consultation-btn">Be Our Next Success Story</a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-text">Client-Focused Approach</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Latest</div>
+                    <div class="stat-text">Technology & Methods</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Proven</div>
+                    <div class="stat-text">Engineering Expertise</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-text">Dedicated Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Fresh Perspective, Proven Expertise</h2>
+                <p>We're new to the market but built on decades of combined engineering experience</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sunfusion Power represents the next evolution in electrical engineering. Founded in 2024, we combine fresh thinking with proven expertise to deliver solutions that established companies can't match.</p>
+                    <p>Our team brings together the best minds in electrical engineering, each with over a decade of specialized experience. We've seen what works and what doesn't in the Zambian market, and we're building something better.</p>
+                    <p>While we may be new as Sunfusion Power, our track record speaks for itself. We've successfully delivered complex projects across multiple sectors, and now we're bringing that expertise together under one roof with a renewed focus on innovation and client success.</p>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-content">
+                        <h3>Why Choose The New Leader?</h3>
+                        <p><i class="fas fa-check-circle" style="color: var(--accent); margin-right: 10px;"></i> Latest Technology & Methods</p>
+                        <p><i class="fas fa-check-circle" style="color: var(--accent); margin-right: 10px;"></i> Agile & Responsive Service</p>
+                        <p><i class="fas fa-check-circle" style="color: var(--accent); margin-right: 10px;"></i> Competitive Founding Client Rates</p>
+                        <p><i class="fas fa-check-circle" style="color: var(--accent); margin-right: 10px;"></i> Proven Engineering Team</p>
+                        <p><i class="fas fa-check-circle" style="color: var(--accent); margin-right: 10px;"></i> Future-Focused Solutions</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mission-vision">
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To redefine electrical engineering in Zambia by combining fresh innovation with proven expertise. We're building the future of power infrastructure, one successful project at a time.</p>
+                </div>
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To become Zambia's most trusted electrical engineering partner within our first five years, known for delivering exceptional results and building lasting client relationships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Next-Generation Engineering Solutions</h2>
+                <p>We're not just keeping up with industry standards - we're setting new ones</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Commercial & Industrial Solar Power Systems">
+                    </div>
+                    <div class="service-content">
+                        <h3>Advanced Solar Solutions</h3>
+                        <p>Harness the latest solar technology with systems designed for maximum efficiency and ROI. We implement cutting-edge panels, smart inverters, and intelligent monitoring that older companies haven't adopted yet.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Professional Electrical Engineering Services">
+                    </div>
+                    <div class="service-content">
+                        <h3>Modern Electrical Systems</h3>
+                        <p>From smart building automation to energy-efficient industrial systems, we design electrical infrastructure that's ready for the future. Our solutions incorporate the latest safety standards and efficiency technologies.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Power Distribution and Transmission Systems">
+                    </div>
+                    <div class="service-content">
+                        <h3>Intelligent Power Distribution</h3>
+                        <p>Transform your power management with our smart grid solutions. We implement real-time monitoring, predictive maintenance systems, and energy optimization that reduce costs and prevent downtime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why We're Different</h2>
+                <p>Being new gives us advantages that established companies can't match</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Fresh Innovation</h3>
+                    <p>We're not bound by "the way we've always done it." Our solutions incorporate the latest technologies and methodologies from day one.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Proven to Deliver</h3>
+                    <p>While Sunfusion is new, our team isn't. We bring decades of combined experience and a track record of successful projects.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Agile & Responsive</h3>
+                    <p>No corporate bureaucracy. We make decisions quickly and adapt to your needs faster than larger, established companies.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Founding Client Benefits</h3>
+                    <p>Get premium attention and competitive rates as we build our reputation together. Your success is our success.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Partnership Approach</h3>
+                    <p>We're building our company around our clients' success. You're not just another project - you're part of our growth story.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Future-Ready</h3>
+                    <p>Our solutions are designed for tomorrow's challenges, not just today's requirements. We build systems that grow with your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Join Our Founding Clients</h2>
+            <p>Be part of our success story from the beginning and receive exclusive founding client benefits while we build our reputation together.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-light" id="consultation-btn">Become a Founding Client</a>
+                <a href="tel:+260774744123" class="btn-call">Speak With Our Founder</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Sunfusion Power</h3>
+                    <p>Zambia's newest premier electrical engineering partner, bringing fresh innovation and proven expertise to commercial and industrial clients.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Lusaka, Zambia</p>
+                        <p><i class="fas fa-phone"></i> +260 774 744 123</p>
+                        <p><i class="fas fa-envelope"></i> salesadmin@sunfusionpower.com</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">Advanced Solar Solutions</a></li>
+                        <li><a href="#services">Modern Electrical Systems</a></li>
+                        <li><a href="#services">Intelligent Power Distribution</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#values">Our Values</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Sunfusion Power Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Become a Founding Client</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Project Details</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your electrical engineering needs..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Get Founding Client Benefits</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Contact Modal Functionality
+        const contactModal = document.getElementById('contactModal');
+        const heroConsultationBtn = document.getElementById('hero-consultation-btn');
+        const consultationBtn = document.getElementById('consultation-btn');
+        const closeModal = document.querySelector('.close-modal');
+        const contactForm = document.getElementById('contactForm');
+
+        // Open modal when contact buttons are clicked
+        heroConsultationBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            contactModal.style.display = 'flex';
+        });
+
+        consultationBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            contactModal.style.display = 'flex';
+        });
+
+        // Close modal when X is clicked
+        closeModal.addEventListener('click', () => {
+            contactModal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside the modal content
+        window.addEventListener('click', (e) => {
+            if (e.target === contactModal) {
+                contactModal.style.display = 'none';
+            }
+        });
+
+        // Handle form submission
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const name = formData.get('name');
+            const company = formData.get('company');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const message = formData.get('message');
+            
+            // Create email content
+            const subject = `Founding Client Interest from ${name} - ${company}`;
+            const body = `Name: ${name}%0D%0ACompany: ${company}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0A%0D%0AProject Details:%0D%0A${message}`;
+            
+            // Open default email client
+            window.location.href = `mailto:salesadmin@sunfusionpower.com?subject=${subject}&body=${body}`;
+            
+            // Close modal after a short delay
+            setTimeout(() => {
+                contactModal.style.display = 'none';
+                contactForm.reset();
+            }, 500);
+        });
+    </script>
+</body>
+</html>
